@@ -1,2 +1,11 @@
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias vim=`which nvim`
+alias pbssh='cat ~/.ssh/id_rsa.pub | pbcopy'
+
+ipinfo() {
+	ips=$(dig +short $1)
+	for ip in $ips; do
+		echo $ip
+		whois $ip
+	done
+}
