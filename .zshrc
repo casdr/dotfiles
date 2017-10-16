@@ -1,8 +1,15 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/go/bin:/usr/local/bin:$PATH
+
+export GOPATH=/Users/casdr/go
+export GOROOT=/usr/local/Cellar/go/1.9/libexec
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/casdr/.oh-my-zsh
+
+# Set UTF-8 locale
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -51,18 +58,8 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 EDITOR=`which nvim`
 
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 . ~/.aliases
 
